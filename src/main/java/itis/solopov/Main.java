@@ -3,14 +3,13 @@ package itis.solopov;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
 
-import javax.servlet.ServletException;
 import java.io.File;
 import java.io.IOException;
 
 public class Main {
     private static final int PORT = port();
 
-    public static void main(String[] args) throws LifecycleException, ServletException {
+    public static void main(String[] args) throws LifecycleException {
         Tomcat tomcat = new Tomcat();
         tomcat.getConnector();
         tomcat.setBaseDir(tempDirectory());

@@ -20,6 +20,8 @@ repositories {
 dependencies {
     implementation("org.springframework:spring-webmvc:${properties["springVersion"]}")
     implementation("org.apache.tomcat.embed:tomcat-embed-jasper:${properties["tomcatVersion"]}")
+
+    implementation("org.json:json:20211205")
 }
 
 
